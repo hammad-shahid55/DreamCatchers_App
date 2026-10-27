@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Launch screen: blue gradient (see drawable/launch_background.xml).
+         The navigation bar uses the gradient's bottom colour so it blends in. -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+        <item name="android:statusBarColor">#2D92D3</item>
+        <item name="android:navigationBarColor">#44CBF1</item>
+    </style>
+    <!-- Window behind the Flutter UI: white, with a white navigation bar and
+         dark icons to match the app's white screens. -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+</resources>
